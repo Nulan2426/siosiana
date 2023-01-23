@@ -27,7 +27,7 @@ transition: opacity 0.3s 0.2s;
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: -10rem;
     left: 0;
     width: 100%;
@@ -38,6 +38,8 @@ transition: opacity 0.3s 0.2s;
     align-items: center;
     padding: 0 8rem;
     animation: navbarAnim 1s .5s forwards;
+    /* overflow:auto; */
+    border: solid red;
 }
 
 @keyframes navbarAnim {
@@ -63,6 +65,16 @@ height: 2.8rem;
     cursor: pointer; */
 }
 
+
+.navigation {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: visible;
+}
+
+
 .navigation a {
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -71,6 +83,7 @@ height: 2.8rem;
     letter-spacing: 0.1rem;
     text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     transition: color 0.3s;
+    /* overflow: hidden; */
     /* display: flex;
     justify-content: space-between;
     flex-direction: row; */
@@ -80,12 +93,17 @@ height: 2.8rem;
     color: #ccc;
 }
 
+
+
 .search-bar > i {
     font-size:1.8rem;
     color: #fff;
     margin-left: -25rem;
     cursor: pointer;
     display: flex;
+    width: 100%;
+    overflow:hidden;
+        
 }
 
 .search-top {
@@ -101,6 +119,7 @@ height: 2.8rem;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 200;
     transition: top 0.6s cubic-bezier(1, 0, 0, 1);
+    padding: 0;
 }
 
 .change .search-top {
@@ -148,19 +167,25 @@ height: 2.8rem;
 }
 
 .banner h3 {
-font-size: 2rem;
+font-size: 2vw;
 text-transform: uppercase;
 color: #ddd;
 margin-bottom: 3rem;
 animation: bannerAnim 1s 1.5s backwards;
+display: flex;
+justify-content: center;
 }
 
 .banner h1 {
     width: 60rem;
-    font-size: 7rem;
+    /* font-size: 7rem; */
+    font-size: 4.5vw;
+    /* text-transform: uppercase; */
     color: #fff;
     text-shadow: 0 1rem, 2rem, rgba(0, 0, 0, 0.7);
     animation: bannerAnim 1s 2s backwards;
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes bannerAnim {
@@ -337,9 +362,10 @@ background-image: url(images/background1.jpg);
 
 #myBtn {
     /* display: none; */
+    margin: 0;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 80px;
     z-index: 99;
     border: none;
     outline: none;
@@ -349,6 +375,8 @@ background-image: url(images/background1.jpg);
     padding: 15px;
     border-radius: 50%;
     font-size: 1.7rem;
+    /* white-space: pre-line;
+    border: red solid; */
 }
 
 #myBtn:hover {
