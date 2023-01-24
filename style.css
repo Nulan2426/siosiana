@@ -14,7 +14,7 @@ scroll-behavior: smooth;
 }
 
 .container {
-    display: flex;
+display: flex;
 width: 100%;
 height:100vh;
 transition: opacity 0.3s 0.2s;
@@ -39,7 +39,7 @@ transition: opacity 0.3s 0.2s;
     padding: 0 8rem;
     animation: navbarAnim 1s .5s forwards;
     /* overflow:auto; */
-    border: solid red;
+    /* border: solid red; */
 }
 
 @keyframes navbarAnim {
@@ -102,7 +102,7 @@ height: 2.8rem;
     cursor: pointer;
     display: flex;
     width: 100%;
-    overflow:hidden;
+    /* overflow:hidden; */
         
 }
 
@@ -260,7 +260,7 @@ span.swiper-pagination-bullet {
 }
 
 span.swiper-pagination-bullet:nth-child(1) {
-    background: url(images/mama4.jpg) center 
+    background: url(images/slide8.jpg) center 
     no-repeat;
     background-size: cover;
 }
@@ -285,6 +285,10 @@ span.swiper-pagination-bullet:nth-child(4) {
 span.swiper-pagination-bullet:nth-child(5) {
     background: url(images/slide5.jpg) center 
     no-repeat;
+    background-size: cover;
+}
+span.swiper-pagination-bullet:nth-child(6) {
+    background: url(images/mama5.jpg) center no-repeat;
     background-size: cover;
 }
 
